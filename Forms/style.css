@@ -1,0 +1,18 @@
+form {
+    display: grid; gap: 12px; width: 300px;
+}
+html {
+    background-color: deepskyblue;
+    color: black;
+}
+input {
+    background-color: chartreuse;
+    border-radius: 15px;
+    border-color: green;
+}
+button {
+    background-color: brown;
+    border-color: chocolate;
+    border-radius: 5px;
+    color: black;
+}

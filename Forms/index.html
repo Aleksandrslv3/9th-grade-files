@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <h1>Sign up</h1>
+        <form id="from">
+            <t>Username:</t>
+            <input type="text" placeholder="Username" id="username">
+            <t>Password:</t>
+            <input type="password" placeholder="Password" id="password">
+            <t>Email:</t>
+            <input type="email" placeholder="Email" id="email">
+            <t>Date of bitrh</t>
+            <input type="text" placeholder="dd/mm/yyyy" id="dateofbirth">
+            <label>
+                <input type="checkbox">
+                Are you a new user?<br>
+                <input type="checkbox">
+                Do you want to get notified on updates?
+                <input type="checkbox">
+                Do you want us to save you Data?
+            </label>
+            <h2>Pick a class!</h2>
+            <label>
+                <input type="radio" name="class">Archer has 20% more ranged damage.<br>
+                <input type="radio" name="class">Knight has 20% more melee damage.<br>
+                <input type="radio" name="class">Guard has 10% more damage reduction and 5% more melee damage and 5% more ranged damage.<br>
+                <input type="radio" name="class">Shielder had 20% more damage reduction.
+            </label>
+            <h2>Finish and sign up</h2>
+            <button type="button" id="button">Sign up</button>
+        </form>
+    <h2>Verification</h2>
+<p>Please input a number between 1 and 10 to verify that you are a human</p>
+<input id="numb">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  // Get the value of the input field with id="numb"
+  let x = document.getElementById("numb").value;
+  // If x is Not a Number or less than one or greater than 10
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+    </body>
